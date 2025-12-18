@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 400px;
+  background: rgba(0,0,0,0.2);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.animated-title {
+  animation: fadeIn 1s ease-in;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.welcome-msg {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+}
+
+.btn-start {
+  padding: 15px 30px;
+  background: #43cea2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.btn-start:hover {
+  background: #185a9d;
+}
+
+.app-content {
+  margin-top: 30px;
+}
+
+.clock {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background: #43cea2;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #185a9d;
+}
+
+.task-list li {
+  background: rgba(255,255,255,0.1);
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

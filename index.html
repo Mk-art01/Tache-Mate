@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TacheMate - Gestionnaire de tâches</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="animated-title">TacheMate</h1>
+    <p class="welcome-msg">👋 <strong>Boostez votre productivité !</strong></p>
+    <p>Organisez vos tâches, gérez votre temps, et atteignez vos objectifs.</p>
+    <button class="btn-start" onclick="startApp()">Démarrer</button>
+    
+    <div class="app-content" style="display: none;">
+      <div class="clock">--:--</div>
+      <div class="calendar">
+        <h2>Calendrier</h2>
+        <input type="date" id="date-picker" onchange="loadTasks()">
+      </div>
+      <div class="task-list">
+        <h2>Tâches du jour</h2>
+        <ul id="tasks-container"></ul>
+        <input type="text" id="new-task" placeholder="Ajouter une tâche">
+        <input type="time" id="task-time">
+        <button onclick="addTask()">Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
